@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "UI Helper HELLO",
+  "description": "UI Helper for designers and frontend developers",
+  "version": "1.0",
+  "action": {
+    "default_popup": "./popup/popup.html",
+    "default_icon": "logo.png"
+  },
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["scripts/content-script.js"]
+    }
+  ]
+}
